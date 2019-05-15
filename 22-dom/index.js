@@ -1,6 +1,23 @@
 // delete the poop, bomb, and knife
 let listTag = document.getElementById("blobs")
 
+let ulTag = document.querySelector('ul')
+
+// ulTag.addEventListener('click', (event) => {
+//   console.log(event)
+//   console.log(`You clicked some shit`)
+//   ulTag.innerHTML += `<li>🔥</li><li>🦕</li><li>☠️</li>`
+// })
+//
+
+
+
+//
+// document.addEventListener('click', (event) => {
+//   console.log(event.target)
+//   ulTag.innerHTML += `<li>🌮</li><li>🍎</li><li>🌶</li><li>🔥</li><li>🦕</li><li>☠️</li>`
+// })
+
 // const targetLength = listTag.children.length
 
 // for (let i = 0; i < targetLength; i++) {
@@ -62,12 +79,18 @@ function addBlob(moje) {
   listTag.appendChild(newLi)
 }
 
+// function callback(shit) {
+//   console.log(shit)
+//   addBlob(emojiString)
+// }
+ulTag.addEventListener('click', (event) => {
+  ["🌮", "🍔", "🥥", "🍟"].forEach(addBlob)
+
+})
+
+
 
 addBlob("🌮")
 addBlob("🍔")
 addBlob("🥥")
 addBlob("🍟")
-
-
-
-
